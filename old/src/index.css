@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 45 62% 74%;
+    --foreground: 30 35% 15%;
+
+    --card: 45 55% 82%;
+    --card-foreground: 30 35% 15%;
+    
+    --card-dark: 30 30% 20%;
+    --card-dark-foreground: 45 62% 74%;
+
+    --popover: 45 62% 74%;
+    --popover-foreground: 30 35% 15%;
+
+    --primary: 30 35% 15%;
+    --primary-foreground: 45 62% 74%;
+
+    --secondary: 45 55% 65%;
+    --secondary-foreground: 30 35% 15%;
+
+    --muted: 45 50% 78%;
+    --muted-foreground: 30 25% 35%;
+
+    --accent: 30 35% 15%;
+    --accent-foreground: 45 62% 74%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 45 62% 74%;
+
+    --border: 30 30% 25%;
+    --input: 45 50% 78%;
+    --ring: 30 35% 15%;
+
+    --radius: 0.25rem;
+    
+    --hero-gradient: linear-gradient(135deg, hsl(45 62% 74%), hsl(45 55% 65%));
+    --shadow-vintage: 0 4px 12px hsla(30, 35%, 15%, 0.15);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 25 45% 12%;
+    --foreground: 45 60% 72%;
+
+    --card: 25 35% 18%;
+    --card-foreground: 45 60% 72%;
+
+    --popover: 25 45% 12%;
+    --popover-foreground: 45 60% 72%;
+
+    --primary: 45 60% 72%;
+    --primary-foreground: 25 45% 12%;
+
+    --secondary: 25 30% 25%;
+    --secondary-foreground: 45 60% 72%;
+
+    --muted: 25 30% 25%;
+    --muted-foreground: 45 40% 55%;
+
+    --accent: 45 60% 72%;
+    --accent-foreground: 25 45% 12%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 45 60% 72%;
+
+    --border: 25 35% 25%;
+    --input: 25 30% 25%;
+    --ring: 45 60% 72%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+}
+
